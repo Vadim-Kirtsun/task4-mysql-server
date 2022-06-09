@@ -1,7 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
-const PORT = '3001';
 
 const app = express();
 
@@ -110,6 +109,6 @@ app.put('/delete', (req, res) => {
         });
 });
 
-app.listen(process.env.PORT || PORT, () => {
+app.listen(process.env.PORT || '3001', () => {
     console.log(`running server on PORT ${PORT}`);
 });

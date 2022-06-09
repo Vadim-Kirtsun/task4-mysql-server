@@ -9,10 +9,10 @@ app.use(express.json());
 app.use(cors());
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'VAD666',
-    database: 'task4db'
+    host: 'eu-cdbr-west-02.cleardb.net',
+    user: 'bd881c4e6eac07',
+    password: '0a17163a',
+    database: 'heroku_7ffb2eb2cf5ac41'
 });
 
 app.post('/register', (req, res) => {

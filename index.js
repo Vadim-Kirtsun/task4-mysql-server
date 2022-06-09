@@ -109,6 +109,6 @@ app.put('/delete', (req, res) => {
         });
 });
 
-app.listen(process.env.PORT || 3001, () => {
-    console.log('running server');
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`running server on PORT ${PORT}`);
 });

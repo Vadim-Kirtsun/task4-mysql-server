@@ -69,7 +69,9 @@ app.get('/getusers', (req, res) => {
             if (err) {
                 res.send({err: err});
             };
-            if (result.length > 0) {
+            if (result === undefined) {
+                res.send({message: 'There are no users in the table!'});
+            } else if (result.length > 0) {
                 res.send(result);
             } else {
                 res.send({message: 'There are no users in the table!'});

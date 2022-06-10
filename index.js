@@ -62,7 +62,7 @@ app.post('/login', (req, res) => {
     );
 });
 
-app.get('/', (req, res) => {
+app.get('/getusers', (req, res) => {
     db.query(
         "SELECT * FROM users",
         (err, result) => {
